@@ -3,6 +3,14 @@ class Song
   attr_accessor :name, :artist_name
   @@all = []
   
+<<<<<<< HEAD
+=======
+  def self.new_by_name(name)
+    @name = name
+    
+  end  
+  
+>>>>>>> 877c170241b9d8b32d08a28d34155a5c589cf750
   def self.all
     @@all
   end
@@ -15,6 +23,7 @@ class Song
     song = self.new
     @@all << song
     song
+<<<<<<< HEAD
   
   end
 <<<<<<< HEAD
@@ -57,6 +66,8 @@ class Song
   def self.find_by_name(s_name)
     @@all.find {|song_in_all| song_in_all.name == s_name}
     
+=======
+>>>>>>> 877c170241b9d8b32d08a28d34155a5c589cf750
   end
 
 >>>>>>> bb133d8aded77343aaee1b2377264d720657300b
